@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <PackageProjectUrl>https://github.com/Maydear/Maydear</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/Maydear/Maydear.git</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/Maydear/Maydear-Extensions-Security</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Maydear/Maydear-Extensions-Security.git</RepositoryUrl>
         <PackageIconUrl>http://oss.lvcoco.com/static/logo.png</PackageIconUrl>
         <PackageIcon>icon.png</PackageIcon>
         <Icon>icon.png</Icon>
