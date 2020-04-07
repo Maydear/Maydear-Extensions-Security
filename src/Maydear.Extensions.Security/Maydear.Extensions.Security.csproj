@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageProjectUrl>https://github.com/Maydear/Maydear</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Maydear/Maydear.git</RepositoryUrl>
+        <PackageIconUrl>http://oss.lvcoco.com/static/logo.png</PackageIconUrl>
+        <PackageIcon>icon.png</PackageIcon>
+        <Icon>icon.png</Icon>
+        <IconUrl>http://oss.lvcoco.com/static/logo.png</IconUrl>
+        <PackageLicenseFile>LICENSE-2.0.txt</PackageLicenseFile>
+        <RepositoryType>git</RepositoryType>
+        <Copyright>Maydear Team (admin@maydear.com)</Copyright>
+        <Authors>Kelvin</Authors>
+        <Company></Company>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <Title>Maydear 兼容java的Security扩展</Title>
+        <Description>RSA、AESWithCTR、SM3（ChinaSecurity）</Description>
+        <Version>2.3.107-preview1</Version>
+        <AssemblyName>Maydear.Extensions.Security</AssemblyName>
+        <NeutralLanguage>zh-CN</NeutralLanguage>
+        <Language>zh-CN</Language>
+        <PackageTags>Maydear maydear</PackageTags>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <DocumentationFile>bin\Release\Maydear.Extensions.Security.xml</DocumentationFile>
+        <OutputPath>..\..\publish\</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\..\LICENSE-2.0.txt" Pack="true" Visible="false" PackagePath="" />
+        <None Include="..\..\icon.png" Pack="true" Visible="false" PackagePath="" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Maydear" Version="2.3.107" />
+        <PackageReference Include="Portable.BouncyCastle" Version="1.8.6.7" />
+    </ItemGroup>
+
+</Project>
